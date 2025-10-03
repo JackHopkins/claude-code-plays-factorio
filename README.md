@@ -2,6 +2,10 @@
 This repository makes it easy for you to build your own Claude Code agents to play Factorio.
 
 ```shell
+# Clone this repo
+git clone https://github.com/JackHopkins/claude-code-plays-factorio.git
+cd claude-code-plays-factorio
+
 # Install FLE
 uv add factorio-learning-environment
 
