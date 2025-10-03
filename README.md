@@ -2,11 +2,14 @@
 This repository makes it easy for you to build your own Claude Code agents to play Factorio.
 
 ```shell
+# Install FLE
 uv add factorio-learning-environment
 
+# Start open world
 fle cluster start -s open_world
 
-
+# Run Claude Code
+claude
 ```
 
 
@@ -22,32 +25,15 @@ Claude operates as an expert automation engineer within Factorio's world of Nauv
 - **Visualization:** Factory state rendering for debugging and monitoring
 - **Persistent Memory:** Local workspace for maintaining knowledge between sessions
 
-Architecture
-┌─────────────────┐
-│     Claude      │ Writes Python code
-│   (AI Agent)    │ Makes decisions
-└────────┬────────┘
-         │
-         ↓ MCP Protocol
-┌─────────────────┐
-│   FLE Server    │ Game state resources
-│   (MCP Server)  │ Code execution
-└────────┬────────┘
-         │
-         ↓ Lua API
-┌─────────────────┐
-│    Factorio     │ The actual game
-│   Game Engine   │
-└─────────────────┘
-Key Components
+## Key Components
 
-Resources (fle://): Read-only access to game state (inventory, entities, position, etc.)
-Tools: State-modifying actions (execute code, render views, version control)
-Workspace: Local filesystem for documentation, notes, and learning patterns
+- Resources (fle://): Read-only access to game state (inventory, entities, position, etc.)
+- Tools: State-modifying actions (execute code, render views, version control)
+- Workspace: Local filesystem for documentation, notes, and learning patterns
 
-API Overview
-Resources (Observation)
+## API Overview
 
+### Resources (Observation)
 fle://status - Connection status
 fle://entities/{x}/{y}/{radius} - Entity information in area
 fle://inventory - Current inventory
@@ -56,16 +42,14 @@ fle://recipe/{name} - Recipe details
 fle://metrics - Production statistics
 fle://render/{x}/{y} - Visual factory state
 
-Tools (Actions)
-
+### Tools (Actions)
 execute(code) - Run Python code
 commit(tag, message) - Save game state
 restore(ref) - Revert to previous state
 render(x, y) - Generate visualization
 
-Core Capabilities
-Claude can:
 
+Claude can:
 Build Mining Operations: Automated ore extraction with self-fueling systems
 Create Production Lines: Multi-stage processing from raw materials to finished goods
 Manage Power Infrastructure: Steam engine setups with boilers and offshore pumps
