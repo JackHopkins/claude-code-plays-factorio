@@ -1,0 +1,11 @@
+{
+  "factorio-fle": {
+    "command": "python3",
+    "args": [
+      "-m",
+      "fle.env.protocols._mcp"
+    ],
+    "transport": "stdio",
+    "description": "Factorio Learning Environment MCP Server"
+  }
+}

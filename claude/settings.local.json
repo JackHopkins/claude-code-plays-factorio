@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(python3 -m pip:*)",
+      "Bash(ls:*)",
+      "mcp__factorio-fle__execute",
+      "mcp__factorio-fle__render",
+      "mcp__factorio-fle__status",
+      "mcp__factorio-fle__undo",
+      "mcp__factorio-fle__view_history",
+      "mcp__factorio-fle__list_tags",
+      "mcp__factorio-fle__restore",
+      "mcp__factorio-fle__man",
+      "mcp__factorio-fle__entities",
+      "mcp__factorio-fle__schema",
+      "mcp__factorio-fle__ls",
+      "mcp__factorio-fle__inventory",
+      "mcp__factorio-fle__manual",
+      "mcp__factorio-fle__cat",
+      "mcp__factorio-fle__find",
+      "Bash(claude --version)",
+      "Bash(python:*)",
+      "Read(//private/tmp/**)",
+      "mcp__ide__getDiagnostics",
+      "Read(//Users/jackhopkins/**)",
+      "mcp__factorio-fle__reconnect",
+      "mcp__factorio-fle__tree",
+      "mcp__factorio-fle__commit",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "mcp__factorio-fle__view_code",
+      "mcp__factorio-fle__view_history",
+      "mcp__factorio-fle__execute",
+      "mcp__factorio-fle__commit",
+      "mcp__factorio-fle__restore",
+      "Bash(mkdir:*)",
+      "mcp__factorio-fle__render",
+      "Bash(touch:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}
